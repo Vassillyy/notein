@@ -1,14 +1,14 @@
 <script>
-	/** @description Описание пропса arr */
+	/** Описание пропса arr */
 	export let arr
 
-	/** @description Описание пропса openNote */
+	/** Описание пропса openNote */
     export let openNote
 
 	/**
 	 * @function
 	 * @param {number} index - Индекс массива
-	 * @description Функция для удаления елемента по его индексу из хранилища arr  
+	 * Функция для удаления елемента по его индексу из хранилища arr  
 	 */
 	function removeItem(index) {
 		arr.update(items => items.filter((item, i) => i !== index))

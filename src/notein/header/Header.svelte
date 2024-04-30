@@ -1,7 +1,7 @@
 <script>
 	import Time from './time/Time.svelte';
 
-	/** @description Описание пропса resetArr */
+	/** Описание пропса resetArr */
 	export let resetArr
 
 </script>

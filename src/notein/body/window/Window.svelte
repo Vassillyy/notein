@@ -1,43 +1,29 @@
 <script>
-	/** @description Описание пропса showNote */
+	/** Описание пропса showNote */
 	export let showNote
 
-	/** @description Описание пропса textareaValue */
+	/** Описание пропса textareaValue */
     export let textareaValue
 
-	/** @description Описание пропса arr */
+	/** Описание пропса arr */
     export let arr
 
 	/**
 	 * @function
-	 * @description Функция для обновления хранилища arr, сброса значения хранилища textareaValue
+	 * Функция для обновления хранилища arr, сброса значения хранилища textareaValue
 	 * и изменения хранилища showNote на false. Выполняется при нажатии на кнопку Create
 	 */
 	function addNoteToArr() {
-		/**
-		 * @description Условие если хранилище textareaValue не является пустой строкой или null
-		*/
 		if ($textareaValue !== null && $textareaValue !== '') {
-			/**
-			 * @description Обновление хранилища arr
-			*/
 			arr.update(arr => [...arr, $textareaValue]);
-
-			/**
-			 * @description Сброс значения хранилища textareaValue
-			*/
 			textareaValue.set('');
-
-			/**
-			 * @description Изменениу хранилища showNote на false
-			*/
 			showNote.set(false);
 		}
 	} 
 	
 	/**
 	 * @function
-	 * @description Функция для сброса значения хранилища textareaValue и изменения хранилища 
+	 * Функция для сброса значения хранилища textareaValue и изменения хранилища 
 	 * showNote на false. Выполняется при нажатии на кнопку Cancel
 	 */
 	function closeNote() {
