@@ -17,6 +17,8 @@
 </script>
 
 
-<Items {openNote} {arr}/>
+<Items {openNote} {arr} {textareaValue}/>
 <Window {showNote} {textareaValue} {arr}/>
+
+
 

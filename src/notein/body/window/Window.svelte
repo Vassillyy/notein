@@ -15,7 +15,8 @@
 	 */
 	function addNoteToArr() {
 		if ($textareaValue !== null && $textareaValue !== '') {
-			arr.update(arr => [...arr, $textareaValue]);
+			let i = 1;
+			arr.update(arr => [...arr, {text: $textareaValue, checked: false}]);
 			textareaValue.set('');
 			showNote.set(false);
 		}
