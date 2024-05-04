@@ -22,7 +22,7 @@
 </script>
 
 {#if $arr.length > 0}
-	<div class="count">{$countActivItems + ' / ' + $countItems}</div>
+	<div class="count">{'Tasks completed:  ' + $countActivItems + ' / ' + $countItems}</div>
 {/if}
 
 <div class="container">

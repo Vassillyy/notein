@@ -40,7 +40,7 @@
 
 {#if $showNote}
 	<div>
-		<textarea bind:value={$textareaValue} placeholder="Введите текст"></textarea>
+		<textarea bind:value={$textareaValue} placeholder="Enter text"></textarea>
 		<span>
 			<button on:click={closeNote}>Cancel</button>
 			<button  on:click={addNoteToArr}>Create</button>
