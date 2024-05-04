@@ -125,20 +125,6 @@
 		padding: 0 0 0 6vw;
 		margin: 0;
 	}
-	svg,
-	.redact {
-		width: 3vw;
-		height: 3vh;
-	}
-	.redact {
-		background-color: NavajoWhite;
-		border-radius: 2vw;
-		border: 0.05vw solid gray;
-		margin-top: 5vh;
-	}
-	.redact:active {
- 		transform: scale(0.95); 
-	} 
 </style>
 
 
